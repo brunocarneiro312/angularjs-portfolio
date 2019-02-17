@@ -1,0 +1,27 @@
+{
+  "name": "angularjs-portfolio",
+  "version": "1.0.0",
+  "description": "Projeto demo utilizando AngularJS (1.x)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "keywords": [],
+  "author": "bruno.carneiro",
+  "license": "ISC",
+  "devDependencies": {
+    "minimatch": ">=3.0.2",
+    "angular": "^1.7.3",
+    "angular-animate": "^1.7.5",
+    "angular-route": "^1.7.5",
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.24.6",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^4.0.1",
+    "gulp-order": "^1.1.1",
+    "jquery": "^3.3.1",
+    "less": "^3.8.1"
+  }
+}

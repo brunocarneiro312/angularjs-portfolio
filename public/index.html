@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app.module">
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda</title>
+
+    <script src="scripts/bundle.js"></script>
+
+    <script src="modules.js"></script>
+    <script src="directives.js"></script>
+    <script src="controllers.js"></script>
+
+    <link rel="stylesheet" href="styles/vendor.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="views/styles.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div ng-controller="MainController">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-2 col-md-offset-5" id="form-div">
+                    <form name="userForm" id="login-form">
+                        <div class="div-logo background-color">
+                            <p>PleromaTI <i class="fa fa-level-up"></i></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-username">Username</label>
+                            <input type="text" name="username" id="input-username" class="form-control" ng-model="user.username" ng-required="true"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-password">Password</label>
+                            <input type="password" name="password" id="input-password" class="form-control" ng-model="user.password" ng-required="true"/>
+                        </div>
+                        <div class="form-group buttons">
+                            <button class="btn btn-hover color-9 btn-block" ng-click="entrar()" ng-disabled="userForm.$invalid">
+                                <span>Entrar</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
